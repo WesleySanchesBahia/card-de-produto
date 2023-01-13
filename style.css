@@ -1,0 +1,126 @@
+*{padding: 0; left: 0; top: 0; margin: 0;}
+
+
+html,
+body{
+    background-color: #D9CDF7;
+}
+
+.containerPrincipal{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    width: 100%;
+    height: 90vh;
+}
+
+
+.containerImagem{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10rem;
+    position: relative;
+    margin-top: 3rem;
+}
+.c_imagem{
+    position: relative;
+    width: 100%;
+}
+
+#vetor:hover, #vetor_close{
+    cursor: pointer;
+}
+
+.c_imagem  #vetor, .c_imagem #vetor_close{
+    position: absolute;
+    margin-left: 32.5rem;
+    margin-top: 1.5rem;
+}
+
+#vetor_close{
+    display: none;
+}
+
+.containerDescricao{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#codigo, #preco{
+    font-family: 'Lato';
+    color: #271A45;
+    opacity: 0.7;
+
+}
+
+#preco{
+    font-size: 22px;
+}
+
+
+#titulo{
+    font-family: 'Crimson Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 100%;
+
+    color: #271A45;
+
+}
+
+#imagem_animada{
+    display: none;
+}
+
+#imagem, #imagem_animada{
+    width: 40rem;
+}
+
+button{
+    background-color: #D9CDF7;
+    border-radius: 999px;
+    border-color: #271A45;
+    width: 232px;
+    height: 50px;
+    cursor: pointer;
+    font-family: 'Lato';
+    font-size: 16px;
+
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in;
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in
+}
+
+
+button:hover{
+    color: #fff;
+    background-color: #271A45;
+
+    -webkit-transition: 0.3s ease-in;
+    -moz-transition: 0.3s ease-in; 
+    -o-transition: 0.3s ease-in;
+    transition: 0.3s ease-in
+}
+
+
+@media screen and (max-width: 900px){
+    .containerPrincipal{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .containerImagem{
+        margin-left: 0;
+    }
+
+
+    #imagem, #imagem_animada{
+        width: 38rem;
+    }
+}
+
